@@ -7,8 +7,8 @@
   <!-- Ojo izquierdo con animaciones -->
   <g>
     <!-- Contorno del ojo -->
-    <ellipse cx="177.508" cy="150.065" rx="30" ry="30" fill="#F2CB05">
-      <animate attributeName="ry" values="18;0;18" dur="2s" repeatCount="indefinite"/>
+    <ellipse cx="177.508" cy="150.065" rx="30" ry="25" fill="#F2CB05">
+      <animate attributeName="ry" values="25;0;25" dur="3s" repeatCount="indefinite"/>
     </ellipse>
     <!-- Pupila -->
     <circle cx="177.508" cy="150.065" r="17" fill="#000">
@@ -22,8 +22,8 @@
   <!-- Ojo derecho con animaciones -->
   <g>
     <!-- Contorno del ojo -->
-    <ellipse cx="282.493" cy="150.065" rx="30" ry="30" fill="#F2CB05">
-      <animate attributeName="ry" values="18;0;18" dur="2s" repeatCount="indefinite"/>
+    <ellipse cx="282.493" cy="150.065" rx="30" ry="25" fill="#F2CB05">
+      <animate attributeName="ry" values="25;0;25" dur="3s" repeatCount="indefinite"/>
     </ellipse>
     <!-- Pupila -->
     <circle cx="282.493" cy="150.065" r="17" fill="#000">
