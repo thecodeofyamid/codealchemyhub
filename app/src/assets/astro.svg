@@ -6,13 +6,11 @@
   
   <!-- Ojo izquierdo con animaciones -->
   <g>
-    <!-- Contorno del ojo -->
     <ellipse cx="177.508" cy="150.065" rx="30" ry="25" fill="#F2CB05">
-      <animate attributeName="ry" values="25;0;25" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="25;0;25" dur="5s" repeatCount="indefinite"/>
     </ellipse>
-    <!-- Pupila -->
     <circle cx="177.508" cy="150.065" r="17" fill="#000">
-      <animate attributeName="cx" values="177.508;167.508;187.508;177.508" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="177.508;167.508;187.508;177.508" dur="4s" repeatCount="indefinite"/>
     </circle>
   </g>
 
@@ -21,17 +19,33 @@
   
   <!-- Ojo derecho con animaciones -->
   <g>
-    <!-- Contorno del ojo -->
     <ellipse cx="282.493" cy="150.065" rx="30" ry="25" fill="#F2CB05">
-      <animate attributeName="ry" values="25;0;25" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="25;0;25" dur="5s" repeatCount="indefinite"/>
     </ellipse>
-    <!-- Pupila -->
     <circle cx="282.493" cy="150.065" r="17" fill="#000">
-      <animate attributeName="cx" values="282.493;272.493;292.493;282.493" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="282.493;272.493;292.493;282.493" dur="4s" repeatCount="indefinite"/>
     </circle>
   </g>
 
   <path style="fill:#1d54b" d="M135 202.631V417.5c104.799 0 190-85.066 190-190v-24.869H135z"/>
-  <path style="fill:#333" d="M255.335 347.581c33.16-33.16 33.16-86.921 0-120.081-33.159-33.159-87.176-33.159-120.335 0"/>
-  <path style="fill:#D9D9D9" d="M135 227.5v170c46.884 0 89.384-19.028 120.163-49.792L135 227.5z"/>
+
+  <!-- Ala (movimiento combinado) -->
+  <g>
+    <path style="fill:#333" d="M255.335 347.581c33.16-33.16 33.16-86.921 0-120.081-33.159-33.159-87.176-33.159-120.335 0">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0,135,227.5; 20,135,227.5; 0,135,227.5"
+        dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path style="fill:#D9D9D9" d="M135 227.5v170c46.884 0 89.384-19.028 120.163-49.792L135 227.5z">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0,135,227.5; 20,135,227.5; 0,135,227.5"
+        dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Ramitas debajo del búho -->
+  <g>
+    <path style="fill:#654321" d="M100 435c30-10 50-30 80-40s70 10 100 20c-20-10-40-30-80-30-40 0-80 20-100 10z"/>
+    <path style="fill:#654321" d="M250 435c30-10 50-30 80-40s70 10 100 20c-20-10-40-30-80-30-40 0-80 20-100 10z"/>
+  </g>
 </svg>
