@@ -32,8 +32,10 @@
   <!-- Ala (movimiento combinado) -->
   <g>
     <path style="fill:#333" d="M255.335 347.581c33.16-33.16 33.16-86.921 0-120.081-33.159-33.159-87.176-33.159-120.335 0">
+      <animateTransform attributeName="transform" type="rotate" values="0,135,227.5; 20,135,227.5; 0,135,227.5" dur="4s" repeatCount="indefinite"/>
     </path>
     <path style="fill:#D9D9D9" d="M135 227.5v170c46.884 0 89.384-19.028 120.163-49.792L135 227.5z">
+      <animateTransform attributeName="transform" type="rotate" values="0,135,227.5; 20,135,227.5; 0,135,227.5" dur="4s" repeatCount="indefinite"/>
     </path>
   </g>
 
