@@ -1,16 +1,23 @@
 ---
 import astroLogo from '../assets/astro.svg';
 import Header from './Header.astro';
+import Footer from './Footer.astro'
 ---
-
+<style>
+  .custom-shadow-all {
+    box-shadow: 0px 0px 16px 4px rgba(0, 255, 255, 0.7); /* Azul celeste */
+  }
+</style>
 <div id="container">
-	<main>
+  <Header/>
+  <main class="max-w-[100%] sm:max-w-[80%] lg:max-w-[60%]">
 		<section id="hero" class="flex flex-col justiy-center items-center">
-			<img src={astroLogo.src} width="200" height="150" alt="Astro Logo" id="logo" />
-			<h1>¡Estamos construyendo algo emocionante!</h1>
-			<p>Pronto lanzaremos una plataforma innovadora para ti. Mantente atento a las novedades.</p>
+			<img src={astroLogo.src} width="200" height="150" alt="Astro Logo" id="logo" class="m-[3%] mt-[-5%]"/>
+			<h1 class="p-[0%]">¡Estamos construyendo algo emocionante!</h2>
+      <p>Pronto lanzaremos una plataforma innovadora para ti. <a href="https://github.com/thecodeofyamid/codealchemyhub" target="_blank" class="block bg-[#070707] p-[2%] rounded-xl mt-[5%] text-red-600 hover:bg-white custom-shadow-all text-lg hover:font-bold">📢 Mantente atento a las novedades </a></p>
 		</section>
-	</main>
+  </main>
+  <Footer/>
 </div>
 
 <canvas id="background"></canvas>
@@ -52,10 +59,14 @@ import Header from './Header.astro';
 	}
 
 	/* Mensaje */
-	p {
-		font-size: 1.2rem;
-		color: white;
-	}
+  p, a {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  a:hover{
+    color: red;
+  }
 
 	/* Media Queries */
 	@media screen and (max-width: 768px) {
@@ -64,10 +75,11 @@ import Header from './Header.astro';
 		}
 
 		h1 {
-			font-size: 1.75rem;
+      font-size: 1.75rem;
+      padding: 2%;
 		}
 
-		p {
+    p,a {
 			font-size: 1.1rem;
 		}
 	}
@@ -78,10 +90,11 @@ import Header from './Header.astro';
 		}
 
 		h1 {
-			font-size: 1.5rem;
+      font-size: 1.5rem;
+      padding: 2%;
 		}
 
-		p {
+    p,a {
 			font-size: 1rem;
 		}
 	}
